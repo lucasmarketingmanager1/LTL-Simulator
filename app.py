@@ -334,10 +334,12 @@ jobs = [
 st.set_page_config(page_title="LTL Simulator", page_icon="🏢", layout="centered")
 st.title("🏢 LTL: Lucas Team Logistics")
 
-mode = st.radio("O'yin rejimini tanlang:", 
-                ["👔 Boss (Lucas) - Boshqaruv", 
-                 "🚀 Karyera - Zinapoya", 
-                 "🎯 Erkin o'yin (Lavozim tanlash)"], horizontal=True)
+mode = st.radio(
+    "O'yin rejimini tanlang:",
+    ["🏢 Boss (Lucas) - Boshqaruv", "🚀 Karyera - Zinapoya", "🎯 Erkin o'yin (Lavozim tanlash)"],
+    horizontal=True,
+    key="game_mode"  # Mana bu qator xatolikni yo'qotadi
+)
 st.markdown("---")
 
 # ==========================================
