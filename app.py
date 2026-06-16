@@ -239,7 +239,8 @@ else:
         if st.button("🌅 Keyingi ish kuniga o'tish"):
             st.session_state.task_done = False
             st.session_state.action_state = None
-            st.rerun()import streamlit as st
+            st.rerun()
+import streamlit as st
 import random
 
 # --- TIZIM XOTIRASI (SESSION STATE) ---
